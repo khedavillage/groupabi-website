@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Capabilities & Services | Group ABI</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: { sans: ['Inter', 'sans-serif'] },
+          colors: {
+            brand: { navy: '#0A192F', amber: '#F59E0B', amberHover: '#D97706', blue: '#0284C7' }
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-gray-50 text-slate-800 antialiased font-sans">
+
+  <!-- Header -->
+  <header class="sticky top-0 z-50 bg-white/95 backdrop-blur shadow-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center h-20">
+        <a href="index.html" class="flex items-center gap-3">
+          <div class="w-10 h-10 bg-brand-navy rounded-lg flex items-center justify-center text-white font-bold text-lg border-2 border-brand-amber">ABI</div>
+          <span class="text-xl font-extrabold tracking-tight text-brand-navy">GROUP ABI</span>
+        </a>
+        <nav class="hidden md:flex items-center space-x-8 text-sm font-medium text-slate-700">
+          <a href="index.html" class="hover:text-brand-amber transition">Home</a>
+          <a href="services.html" class="text-brand-amber font-semibold">Capabilities</a>
+          <a href="projects.html" class="hover:text-brand-amber transition">Projects</a>
+          <a href="contact.html" class="hover:text-brand-amber transition">Contact</a>
+        </nav>
+        <a href="contact.html" class="bg-brand-amber hover:bg-brand-amberHover text-white font-semibold text-sm px-5 py-2.5 rounded-md shadow transition">Request RFP</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Banner -->
+  <section class="bg-brand-navy text-white py-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <span class="text-brand-amber text-xs font-bold uppercase tracking-wider">Engineering Solutions</span>
+      <h1 class="text-4xl font-extrabold mt-2 mb-4">Turnkey EPC Capabilities</h1>
+      <p class="text-slate-300 max-w-2xl text-base">Comprehensive end-to-end execution for high-voltage transmission lines, rapid utility shifting, and industrial substations up to 400 kV.</p>
+    </div>
+  </section>
+
+  <!-- Services Detailed Breakdown -->
+  <section class="py-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-16">
+
+      <!-- 1. Utility Shifting & Height Raising -->
+      <div class="bg-white rounded-2xl border border-gray-200 p-8 lg:p-10 shadow-sm grid grid-cols-1 lg:grid-cols-3 gap-8">
+        <div class="lg:col-span-2">
+          <span class="inline-block px-3 py-1 bg-amber-100 text-amber-800 text-xs font-bold rounded-full mb-3">Core Specialty</span>
+          <h2 class="text-2xl font-bold text-brand-navy mb-4">EHV Utility Shifting & Height Raising</h2>
+          <p class="text-slate-600 leading-relaxed mb-6">
+            Rapid relocation and height adjustments for 400 kV, 220 kV, and 132 kV transmission lines to clear expressway corridors, metro tracks, and dedicated freight railway lines under stringent shutdown deadlines.
+          </p>
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-sm text-slate-700">
+            <div class="flex items-center gap-2"><i data-lucide="check-circle" class="w-4 h-4 text-brand-amber"></i> Route Survey & Feasibility Profiling</div>
+            <div class="flex items-center gap-2"><i data-lucide="check-circle" class="w-4 h-4 text-brand-amber"></i> Pre-shutdown Tower Erection</div>
+            <div class="flex items-center gap-2"><i data-lucide="check-circle" class="w-4 h-4 text-brand-amber"></i> Dynamic Shutdown Time-window Adherence</div>
+            <div class="flex items-center gap-2"><i data-lucide="check-circle" class="w-4 h-4 text-brand-amber"></i> Statutory PTCC & CEA Clearances</div>
+          </div>
+        </div>
+        <div class="bg-gray-50 rounded-xl p-6 border border-gray-200 flex flex-col justify-between">
+          <div>
+            <h4 class="font-bold text-brand-navy mb-2 text-sm uppercase">Technical Rating</h4>
+            <ul class="text-sm space-y-2 text-slate-600">
+              <li>• Voltage Levels: <strong>132 kV to 400 kV</strong></li>
+              <li>• Structure Types: Lattice, Monopoles</li>
+              <li>• Equipment: Heavy tension stringing winches</li>
+            </ul>
+          </div>
+          <a href="contact.html" class="mt-6 text-center w-full py-2.5 bg-brand-navy text-white text-xs font-bold uppercase tracking-wider rounded-md hover:bg-slate-800 transition">Consult Line Engineers</a>
+        </div>
+      </div>
+
+      <!-- 2. Power Transmission -->
+      <div class="bg-white rounded-2xl border border-gray-200 p-8 lg:p-10 shadow-sm grid grid-cols-1 lg:grid-cols-3 gap-8">
+        <div class="lg:col-span-2">
+          <span class="inline-block px-3 py-1 bg-blue-100 text-blue-800 text-xs font-bold rounded-full mb-3">Transmission Lines</span>
+          <h2 class="text-2xl font-bold text-brand-navy mb-4">Transmission Line EPC (Up to 400 kV)</h2>
+          <p class="text-slate-600 leading-relaxed mb-6">
+            Complete turnkey scope covering soil investigation, pile foundation in riverbeds/rocky strata, tower fabrication inspection, stringing over critical crossings, and end-to-end commissioning.
+          </p>
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-sm text-slate-700">
+            <div class="flex items-center gap-2"><i data-lucide="check-circle" class="w-4 h-4 text-brand-amber"></i> Quad & Twin Conductor Stringing</div>
+            <div class="flex items-center gap-2"><i data-lucide="check-circle" class="w-4 h-4 text-brand-amber"></i> River & Highway Major Crossings</div>
+            <div class="flex items-center gap-2"><i data-lucide="check-circle" class="w-4 h-4 text-brand-amber"></i> OPGW Stringing & Splicing</div>
+            <div class="flex items-center gap-2"><i data-lucide="check-circle" class="w-4 h-4 text-brand-amber"></i> Right-of-Way (RoW) Management</div>
+          </div>
+        </div>
+        <div class="bg-gray-50 rounded-xl p-6 border border-gray-200 flex flex-col justify-between">
+          <div>
+            <h4 class="font-bold text-brand-navy mb-2 text-sm uppercase">Key Specs</h4>
+            <ul class="text-sm space-y-2 text-slate-600">
+              <li>• Single & Double Circuit Towers</li>
+              <li>• GIS & AIS Grid Interconnection</li>
+              <li>• Safety Standard: Zero-Accident HSE Policy</li>
+            </ul>
+          </div>
+          <a href="contact.html" class="mt-6 text-center w-full py-2.5 bg-brand-navy text-white text-xs font-bold uppercase tracking-wider rounded-md hover:bg-slate-800 transition">Request Quote</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-brand-navy text-slate-400 py-8 border-t border-slate-800 text-sm">
+    <div class="max-w-7xl mx-auto px-4 text-center">
+      <p>© 2026 Group ABI (ABI Energy Solutions Ltd.). All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>lucide.createIcons();</script>
+</body>
+</html>

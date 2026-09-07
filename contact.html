@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact & RFP | Group ABI</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: { sans: ['Inter', 'sans-serif'] },
+          colors: { brand: { navy: '#0A192F', amber: '#F59E0B', amberHover: '#D97706' } }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-gray-50 text-slate-800 antialiased font-sans">
+
+  <!-- Header -->
+  <header class="sticky top-0 z-50 bg-white/95 backdrop-blur shadow-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center h-20">
+        <a href="index.html" class="flex items-center gap-3">
+          <div class="w-10 h-10 bg-brand-navy rounded-lg flex items-center justify-center text-white font-bold text-lg border-2 border-brand-amber">ABI</div>
+          <span class="text-xl font-extrabold tracking-tight text-brand-navy">GROUP ABI</span>
+        </a>
+        <nav class="hidden md:flex items-center space-x-8 text-sm font-medium text-slate-700">
+          <a href="index.html" class="hover:text-brand-amber transition">Home</a>
+          <a href="services.html" class="hover:text-brand-amber transition">Capabilities</a>
+          <a href="projects.html" class="hover:text-brand-amber transition">Projects</a>
+          <a href="contact.html" class="text-brand-amber font-semibold">Contact</a>
+        </nav>
+        <a href="contact.html" class="bg-brand-amber hover:bg-brand-amberHover text-white font-semibold text-sm px-5 py-2.5 rounded-md shadow transition">Request RFP</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Banner -->
+  <section class="bg-brand-navy text-white py-14">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <span class="text-brand-amber text-xs font-bold uppercase tracking-wider">Direct Engineering Desk</span>
+      <h1 class="text-4xl font-extrabold mt-2 mb-2">Connect With Group ABI</h1>
+      <p class="text-slate-300 max-w-xl text-sm">Send your tender specs, BOQ documents, or general vendor queries directly to our operations office in Noida.</p>
+    </div>
+  </section>
+
+  <!-- Main Section -->
+  <section class="py-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-3 gap-10">
+      
+      <!-- Contact Info Cards -->
+      <div class="space-y-6">
+        <div class="bg-white p-6 rounded-xl border border-gray-200 shadow-sm">
+          <div class="w-10 h-10 bg-amber-50 rounded-lg flex items-center justify-center text-brand-amber mb-4">
+            <i data-lucide="map-pin" class="w-5 h-5"></i>
+          </div>
+          <h4 class="font-bold text-brand-navy text-base mb-1">Corporate Office</h4>
+          <p class="text-slate-600 text-sm leading-relaxed">
+            ABI Energy Solutions Ltd.<br />
+            Noida, Uttar Pradesh, India
+          </p>
+        </div>
+
+        <div class="bg-white p-6 rounded-xl border border-gray-200 shadow-sm">
+          <div class="w-10 h-10 bg-blue-50 rounded-lg flex items-center justify-center text-blue-600 mb-4">
+            <i data-lucide="phone" class="w-5 h-5"></i>
+          </div>
+          <h4 class="font-bold text-brand-navy text-base mb-1">Client Services & Desk</h4>
+          <p class="text-slate-600 text-sm mb-1">+91-1204385913</p>
+          <span class="text-xs text-slate-400">Mon - Sat: 9:30 AM - 6:30 PM IST</span>
+        </div>
+
+        <div class="bg-white p-6 rounded-xl border border-gray-200 shadow-sm">
+          <div class="w-10 h-10 bg-emerald-50 rounded-lg flex items-center justify-center text-emerald-600 mb-4">
+            <i data-lucide="mail" class="w-5 h-5"></i>
+          </div>
+          <h4 class="font-bold text-brand-navy text-base mb-1">Tenders & RFPs</h4>
+          <p class="text-slate-600 text-sm">info@groupabi.com</p>
+        </div>
+      </div>
+
+      <!-- Form Container -->
+      <div class="lg:col-span-2 bg-white p-8 lg:p-10 rounded-2xl border border-gray-200 shadow-sm">
+        <h3 class="text-2xl font-bold text-brand-navy mb-2">Submit RFP or Tender Document</h3>
+        <p class="text-slate-600 text-sm mb-8">Fill the project requirements below; our estimating team will reach out with a preliminary schedule.</p>
+
+        <form onsubmit="event.preventDefault(); alert('Inquiry successfully recorded. We will contact you soon.');" class="space-y-5">
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+            <div>
+              <label class="block text-xs font-semibold text-slate-700 uppercase mb-1">Your Name *</label>
+              <input type="text" required class="w-full px-4 py-2.5 border border-gray-300 rounded-md focus:ring-2 focus:ring-brand-amber outline-none text-sm" placeholder="Rajesh Sharma" />
+            </div>
+            <div>
+              <label class="block text-xs font-semibold text-slate-700 uppercase mb-1">Company / Organization *</label>
+              <input type="text" required class="w-full px-4 py-2.5 border border-gray-300 rounded-md focus:ring-2 focus:ring-brand-amber outline-none text-sm" placeholder="e.g. NHAI / L&T / Discom" />
+            </div>
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+            <div>
+              <label class="block text-xs font-semibold text-slate-700 uppercase mb-1">Email ID *</label>
+              <input type="email" required class="w-full px-4 py-2.5 border border-gray-300 rounded-md focus:ring-2 focus:ring-brand-amber outline-none text-sm" placeholder="name@company.com" />
+            </div>
+            <div>
+              <label class="block text-xs font-semibold text-slate-700 uppercase mb-1">Phone Number *</label>
+              <input type="tel" required class="w-full px-4 py-2.5 border border-gray-300 rounded-md focus:ring-2 focus:ring-brand-amber outline-none text-sm" placeholder="+91 XXXXX XXXXX" />
+            </div>
+          </div>
+
+          <div>
+            <label class="block text-xs font-semibold text-slate-700 uppercase mb-1">Project Work Scope</label>
+            <select class="w-full px-4 py-2.5 border border-gray-300 rounded-md focus:ring-2 focus:ring-brand-amber outline-none text-sm bg-white">
+              <option>Utility Shifting & Height Raising (400kV/220kV/132kV)</option>
+              <option>Power Transmission Line Construction</option>
+              <option>Substation Construction (AIS / GIS)</option>
+              <option>Civil Infrastructure Work</option>
+              <option>Vendor / Sub-contractor Registration</option>
+            </select>
+          </div>
+
+          <div>
+            <label class="block text-xs font-semibold text-slate-700 uppercase mb-1">Project Details / Message</label>
+            <textarea rows="4" class="w-full px-4 py-2.5 border border-gray-300 rounded-md focus:ring-2 focus:ring-brand-amber outline-none text-sm" placeholder="Describe the voltage level, tentative location, and completion target..."></textarea>
+          </div>
+
+          <button type="submit" class="w-full py-3 bg-brand-navy hover:bg-slate-800 text-white font-semibold rounded-md shadow transition flex items-center justify-center gap-2">
+            <i data-lucide="send" class="w-4 h-4 text-brand-amber"></i>
+            <span>Send Tender Inquiry</span>
+          </button>
+        </form>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-brand-navy text-slate-400 py-8 border-t border-slate-800 text-sm text-center">
+    <p>© 2026 Group ABI (ABI Energy Solutions Ltd.). All rights reserved.</p>
+  </footer>
+
+  <script>lucide.createIcons();</script>
+</body>
+</html>

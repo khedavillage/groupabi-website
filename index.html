@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Group ABI | Premier EPC Solutions</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: { sans: ['Inter', 'sans-serif'] },
+          colors: {
+            brand: { navy: '#0A192F', slate: '#1E293B', amber: '#F59E0B', amberHover: '#D97706', blue: '#0284C7' }
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-gray-50 text-slate-800 antialiased font-sans">
+
+  <!-- Top Bar -->
+  <div class="bg-brand-navy border-b border-slate-700 text-xs text-slate-300 py-2.5 px-4 hidden md:block">
+    <div class="max-w-7xl mx-auto flex justify-between items-center">
+      <div class="flex items-center space-x-6">
+        <span class="flex items-center gap-1.5"><i data-lucide="phone" class="w-3.5 h-3.5 text-brand-amber"></i> +91-1204385913</span>
+        <span class="flex items-center gap-1.5"><i data-lucide="mail" class="w-3.5 h-3.5 text-brand-amber"></i> info@groupabi.com</span>
+        <span class="flex items-center gap-1.5"><i data-lucide="map-pin" class="w-3.5 h-3.5 text-brand-amber"></i> Noida, Uttar Pradesh, India</span>
+      </div>
+      <div class="text-slate-400">
+        <span>ISO 9001:2015 Certified EPC Contractor</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Navigation Bar -->
+  <header class="sticky top-0 z-50 bg-white/95 backdrop-blur shadow-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center h-20">
+        <a href="index.html" class="flex items-center gap-3">
+          <div class="w-11 h-11 bg-brand-navy rounded-lg flex items-center justify-center text-white font-bold text-xl border-2 border-brand-amber">
+            ABI
+          </div>
+          <div>
+            <span class="text-xl font-extrabold tracking-tight text-brand-navy">GROUP ABI</span>
+            <span class="block text-[10px] tracking-wider text-slate-500 font-semibold uppercase">ABI Energy Solutions Ltd.</span>
+          </div>
+        </a>
+
+        <!-- Page Links -->
+        <nav class="hidden md:flex items-center space-x-8 text-sm font-medium text-slate-700">
+          <a href="index.html" class="text-brand-amber font-semibold">Home</a>
+          <a href="services.html" class="hover:text-brand-amber transition">Capabilities</a>
+          <a href="projects.html" class="hover:text-brand-amber transition">Projects</a>
+          <a href="contact.html" class="hover:text-brand-amber transition">Contact</a>
+        </nav>
+
+        <div>
+          <a href="contact.html" class="bg-brand-amber hover:bg-brand-amberHover text-white font-semibold text-sm px-5 py-2.5 rounded-md shadow transition flex items-center gap-2">
+            <span>Request RFP</span>
+            <i data-lucide="arrow-right" class="w-4 h-4"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="relative bg-brand-navy text-white overflow-hidden py-24 lg:py-32">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div class="max-w-3xl">
+        <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-slate-800/80 border border-slate-700 text-brand-amber text-xs font-semibold uppercase tracking-wider mb-6">
+          <span class="w-2 h-2 rounded-full bg-brand-amber animate-pulse"></span>
+          Engineering & Turnkey EPC Execution
+        </div>
+        <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-tight mb-6">
+          Powering National Grids up to <span class="text-brand-amber">400 kV</span>
+        </h1>
+        <p class="text-lg text-slate-300 mb-8 leading-relaxed">
+          ABI Energy Solutions Ltd. delivers specialized turnkey execution in high-voltage power transmission, substation construction, and complex utility shifting.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4">
+          <a href="services.html" class="inline-flex justify-center items-center px-6 py-3.5 rounded-md bg-brand-amber text-white font-semibold hover:bg-brand-amberHover transition shadow-lg">
+            Explore Capabilities
+          </a>
+          <a href="contact.html" class="inline-flex justify-center items-center px-6 py-3.5 rounded-md border border-slate-600 bg-slate-800/50 hover:bg-slate-700 text-white font-semibold transition">
+            Consult Engineering Team
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats Strip -->
+  <section class="bg-white border-b border-gray-200 py-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center divide-x-0 md:divide-x divide-gray-200">
+        <div class="p-4">
+          <div class="text-4xl font-extrabold text-brand-navy mb-1">30+</div>
+          <div class="text-sm font-medium text-slate-500 uppercase tracking-wide">Years Experience</div>
+        </div>
+        <div class="p-4">
+          <div class="text-4xl font-extrabold text-brand-amber mb-1">350+</div>
+          <div class="text-sm font-medium text-slate-500 uppercase tracking-wide">Projects Delivered</div>
+        </div>
+        <div class="p-4">
+          <div class="text-4xl font-extrabold text-brand-navy mb-1">400 kV</div>
+          <div class="text-sm font-medium text-slate-500 uppercase tracking-wide">Capacity Handled</div>
+        </div>
+        <div class="p-4">
+          <div class="text-4xl font-extrabold text-emerald-600 mb-1">120+</div>
+          <div class="text-sm font-medium text-slate-500 uppercase tracking-wide">Skilled Workforce</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Preview -->
+  <section class="py-20 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col md:flex-row md:items-end justify-between mb-12">
+        <div>
+          <h2 class="text-xs font-bold text-brand-amber tracking-widest uppercase">Specializations</h2>
+          <p class="text-3xl font-extrabold text-brand-navy mt-1">Our Engineering Capabilities</p>
+        </div>
+        <a href="services.html" class="mt-4 md:mt-0 inline-flex items-center gap-1.5 text-sm font-bold text-brand-amber hover:underline">
+          View All Services <i data-lucide="chevron-right" class="w-4 h-4"></i>
+        </a>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div class="bg-white p-6 rounded-xl border border-gray-200">
+          <i data-lucide="zap" class="w-8 h-8 text-brand-blue mb-4"></i>
+          <h3 class="font-bold text-brand-navy mb-2">Power Transmission</h3>
+          <p class="text-sm text-slate-600 mb-4">Lines and substations up to 400 kV turnkey scope.</p>
+          <a href="services.html" class="text-xs font-bold text-brand-amber">Learn More →</a>
+        </div>
+        <div class="bg-white p-6 rounded-xl border border-gray-200">
+          <i data-lucide="git-merge" class="w-8 h-8 text-brand-amber mb-4"></i>
+          <h3 class="font-bold text-brand-navy mb-2">Utility Shifting</h3>
+          <p class="text-sm text-slate-600 mb-4">Expressway and railway height-raising projects.</p>
+          <a href="services.html" class="text-xs font-bold text-brand-amber">Learn More →</a>
+        </div>
+        <div class="bg-white p-6 rounded-xl border border-gray-200">
+          <i data-lucide="network" class="w-8 h-8 text-emerald-600 mb-4"></i>
+          <h3 class="font-bold text-brand-navy mb-2">Power Distribution</h3>
+          <p class="text-sm text-slate-600 mb-4">Substation setups, transformer yard, HT/LT lines.</p>
+          <a href="services.html" class="text-xs font-bold text-brand-amber">Learn More →</a>
+        </div>
+        <div class="bg-white p-6 rounded-xl border border-gray-200">
+          <i data-lucide="building" class="w-8 h-8 text-indigo-600 mb-4"></i>
+          <h3 class="font-bold text-brand-navy mb-2">Civil Works</h3>
+          <p class="text-sm text-slate-600 mb-4">Heavy equipment foundations and control rooms.</p>
+          <a href="services.html" class="text-xs font-bold text-brand-amber">Learn More →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer with Interlinks -->
+  <footer class="bg-brand-navy text-slate-400 py-12 border-t border-slate-800 text-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center gap-6">
+      <div>
+        <span class="text-white font-bold text-base tracking-wide">GROUP ABI</span>
+        <p class="text-xs text-slate-500 mt-1">© 2026 Group ABI (ABI Energy Solutions Ltd.). All rights reserved.</p>
+      </div>
+      <div class="flex gap-6 text-xs font-medium">
+        <a href="index.html" class="hover:text-white">Home</a>
+        <a href="services.html" class="hover:text-white">Capabilities</a>
+        <a href="projects.html" class="hover:text-white">Projects</a>
+        <a href="contact.html" class="hover:text-white">Contact & RFP</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>lucide.createIcons();</script>
+</body>
+</html>
