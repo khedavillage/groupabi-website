@@ -70,8 +70,8 @@
     </div>
   </header>
 
-  <!-- Hero Section -->
-  <section class="relative bg-brand-navy text-white overflow-hidden py-24 lg:py-32">
+  <!-- Hero Section With Real Background Image -->
+  <section class="relative bg-brand-navy text-white overflow-hidden py-24 lg:py-32 bg-cover bg-center" style="background-image: linear-gradient(to right, rgba(10, 25, 47, 0.92), rgba(10, 25, 47, 0.75)), url('https://images.unsplash.com/photo-1513828583688-c52646db42da?auto=format&fit=crop&w=1600&q=80');">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
       <div class="max-w-3xl">
         <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-slate-800/80 border border-slate-700 text-brand-amber text-xs font-semibold uppercase tracking-wider mb-6">
@@ -120,7 +120,7 @@
     </div>
   </section>
 
-  <!-- Services Preview -->
+  <!-- Services Grid With Industrial Photos -->
   <section class="py-20 bg-gray-50">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex flex-col md:flex-row md:items-end justify-between mb-12">
@@ -134,35 +134,80 @@
       </div>
 
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-        <div class="bg-white p-6 rounded-xl border border-gray-200">
-          <i data-lucide="zap" class="w-8 h-8 text-brand-blue mb-4"></i>
-          <h3 class="font-bold text-brand-navy mb-2">Power Transmission</h3>
-          <p class="text-sm text-slate-600 mb-4">Lines and substations up to 400 kV turnkey scope.</p>
-          <a href="services.html" class="text-xs font-bold text-brand-amber">Learn More →</a>
+        
+        <!-- Image 1: Transmission Line -->
+        <div class="bg-white rounded-xl border border-gray-200 overflow-hidden shadow-sm hover:shadow-lg transition">
+          <div class="h-44 overflow-hidden">
+            <img 
+              src="https://images.unsplash.com/photo-1513828583688-c52646db42da?auto=format&fit=crop&w=600&q=80" 
+              alt="Power Transmission Lines" 
+              class="w-full h-full object-cover hover:scale-105 transition duration-300"
+            />
+          </div>
+          <div class="p-5">
+            <span class="text-xs font-bold text-brand-amber uppercase tracking-wider">Up to 400 kV</span>
+            <h3 class="font-bold text-brand-navy text-lg mt-1 mb-2">Power Transmission</h3>
+            <p class="text-xs text-slate-600 mb-4">Turnkey EHV transmission lines, survey, tower erection, and conductor stringing.</p>
+            <a href="services.html" class="text-xs font-bold text-brand-navy hover:text-brand-amber">Learn More →</a>
+          </div>
         </div>
-        <div class="bg-white p-6 rounded-xl border border-gray-200">
-          <i data-lucide="git-merge" class="w-8 h-8 text-brand-amber mb-4"></i>
-          <h3 class="font-bold text-brand-navy mb-2">Utility Shifting</h3>
-          <p class="text-sm text-slate-600 mb-4">Expressway and railway height-raising projects.</p>
-          <a href="services.html" class="text-xs font-bold text-brand-amber">Learn More →</a>
+
+        <!-- Image 2: Utility Shifting -->
+        <div class="bg-white rounded-xl border border-gray-200 overflow-hidden shadow-sm hover:shadow-lg transition">
+          <div class="h-44 overflow-hidden">
+            <img 
+              src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=600&q=80" 
+              alt="Utility Shifting Work" 
+              class="w-full h-full object-cover hover:scale-105 transition duration-300"
+            />
+          </div>
+          <div class="p-5">
+            <span class="text-xs font-bold text-brand-amber uppercase tracking-wider">Critical Corridors</span>
+            <h3 class="font-bold text-brand-navy text-lg mt-1 mb-2">Utility Shifting</h3>
+            <p class="text-xs text-slate-600 mb-4">Expressway and railway height-raising projects under tight planned shutdowns.</p>
+            <a href="services.html" class="text-xs font-bold text-brand-navy hover:text-brand-amber">Learn More →</a>
+          </div>
         </div>
-        <div class="bg-white p-6 rounded-xl border border-gray-200">
-          <i data-lucide="network" class="w-8 h-8 text-emerald-600 mb-4"></i>
-          <h3 class="font-bold text-brand-navy mb-2">Power Distribution</h3>
-          <p class="text-sm text-slate-600 mb-4">Substation setups, transformer yard, HT/LT lines.</p>
-          <a href="services.html" class="text-xs font-bold text-brand-amber">Learn More →</a>
+
+        <!-- Image 3: Substation -->
+        <div class="bg-white rounded-xl border border-gray-200 overflow-hidden shadow-sm hover:shadow-lg transition">
+          <div class="h-44 overflow-hidden">
+            <img 
+              src="https://images.unsplash.com/photo-1544724569-5f546fd6f2b5?auto=format&fit=crop&w=600&q=80" 
+              alt="Electrical Substation" 
+              class="w-full h-full object-cover hover:scale-105 transition duration-300"
+            />
+          </div>
+          <div class="p-5">
+            <span class="text-xs font-bold text-brand-amber uppercase tracking-wider">AIS & GIS</span>
+            <h3 class="font-bold text-brand-navy text-lg mt-1 mb-2">Substations</h3>
+            <p class="text-xs text-slate-600 mb-4">Substation setups, transformer yards, switchgear, and control systems.</p>
+            <a href="services.html" class="text-xs font-bold text-brand-navy hover:text-brand-amber">Learn More →</a>
+          </div>
         </div>
-        <div class="bg-white p-6 rounded-xl border border-gray-200">
-          <i data-lucide="building" class="w-8 h-8 text-indigo-600 mb-4"></i>
-          <h3 class="font-bold text-brand-navy mb-2">Civil Works</h3>
-          <p class="text-sm text-slate-600 mb-4">Heavy equipment foundations and control rooms.</p>
-          <a href="services.html" class="text-xs font-bold text-brand-amber">Learn More →</a>
+
+        <!-- Image 4: Power Distribution -->
+        <div class="bg-white rounded-xl border border-gray-200 overflow-hidden shadow-sm hover:shadow-lg transition">
+          <div class="h-44 overflow-hidden">
+            <img 
+              src="https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?auto=format&fit=crop&w=600&q=80" 
+              alt="Power Distribution" 
+              class="w-full h-full object-cover hover:scale-105 transition duration-300"
+            />
+          </div>
+          <div class="p-5">
+            <span class="text-xs font-bold text-brand-amber uppercase tracking-wider">Feeders & Cabling</span>
+            <h3 class="font-bold text-brand-navy text-lg mt-1 mb-2">Power Distribution</h3>
+            <p class="text-xs text-slate-600 mb-4">HT/LT cabling, pole line installations, and urban feeder modernization.</p>
+            <a href="services.html" class="text-xs font-bold text-brand-navy hover:text-brand-amber">Learn More →</a>
+          </div>
         </div>
+
       </div>
     </div>
   </section>
 
-  <!-- Footer with Interlinks -->
+  <!-- Footer -->
   <footer class="bg-brand-navy text-slate-400 py-12 border-t border-slate-800 text-sm">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center gap-6">
       <div>
